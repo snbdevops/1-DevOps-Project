@@ -8,3 +8,8 @@ We are implement this CI-CD Pipeline with Jenkins Shared Libraries. Purpose Shar
 
 ### CI-CD Pipeline Project Architecture
 ![image](https://github.com/snbdevops/1-DevOps-Project/assets/83505877/90399cbf-206b-4769-88b6-f32240b23f80)
+
+###Creating Jenkins Server.
+As we are going to use sonarqube in this server itself so we should take a bigger resource server. Here we will be taking t2.medium(2vCPU & 4GB RAM). Also, use EBS volume of 30GB.
+**Note - Here we will be installing sonarqube as a docker container.**
+
