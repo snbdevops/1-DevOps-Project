@@ -3,12 +3,19 @@
 pipeline{
     agent any
     stages{
-        stage('Git Checkout stage'){
+        stage('Step-1: Git Checkout stage'){
             steps{
                 gitCheckout(
                     branch: "main",
                     url: "https://github.com/snbdevops/1-DevOps-Project.git"
                 )
+            }
+        }
+        stage('Step-2: Unit Test Maven'){
+            steps{
+                script{
+                    mvmTest()
+                }
             }
         }
     }
