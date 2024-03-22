@@ -3,12 +3,10 @@ pipeline{
     stages{
         stage('Git Checkout stage'){
             steps{
-                script{
-                    gitCheckout(
-                        branch: "main"
-                        url: "https://github.com/snbdevops/1-DevOps-Project.git"
-                    )
-               }
+                gitCheckout(
+                    branch: "main",
+                    url: "https://github.com/snbdevops/1-DevOps-Project.git"
+                )
             }
         }
     }
