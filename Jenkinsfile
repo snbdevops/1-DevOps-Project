@@ -4,7 +4,10 @@ pipeline{
         stage('Git Checkout stage'){
             steps{
                 script{
-                    git branch: 'main', url: 'https://github.com/snbdevops/1-DevOps-Project.git'
+                    gitCheckout(
+                        branch: "main"
+                        url: "https://github.com/snbdevops/1-DevOps-Project.git"
+                    )
                }
             }
         }
